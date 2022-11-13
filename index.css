@@ -1,20 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(#2980b9, #6dd5fa); 
+    background: linear-gradient(#2980b9, #6dd5fa);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
-   text-align: center;
-   color: gold;
-   font-weight: 300;
+    text-align: center;
+    color: gold;
+    font-weight: 300;
 }
 
 .map-container {
+    position: relative;
     margin: 30px auto 0 auto;
     width: 300px;
+    border: 2px solid red;
 }
 
 img {
@@ -24,13 +26,21 @@ img {
 
 .sun-icon {
     font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 120px;
 }
 
 .temperature {
-/*
+    /*
 Challenge:
-1. Position the temperature div 
-   next to the sun emoji. 
+1. Position the temperature div
+   next to the sun emoji.
 */
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    /* bottom: 160px;
+    right: 95px; */
     font-size: 20px;
 }
